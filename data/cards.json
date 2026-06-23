@@ -1,1 +1,30 @@
-
+[
+  {
+    "id": "tok-001",
+    "title": "What Do You Claim to Know?",
+    "term": 1,
+    "day": 1,
+    "durationMinutes": 90,
+    "category": "foundations",
+    "status": "Planned",
+    "concepts": ["Knowledge", "Belief", "Certainty"],
+    "knowledgeQuestion": "How do we decide that something counts as knowledge?",
+    "activity": "Knowledge inventory and class discussion",
+    "assignment": "Day One Reflection",
+    "notes": "Use this to establish the central habit of TOK thinking."
+  },
+  {
+    "id": "tok-002",
+    "title": "Knowledge and the Knower",
+    "term": 1,
+    "day": 2,
+    "durationMinutes": 90,
+    "category": "knower",
+    "status": "Planned",
+    "concepts": ["Perspective", "Identity", "Experience"],
+    "knowledgeQuestion": "How does the knower shape what is known?",
+    "activity": "Perspective comparison activity",
+    "assignment": "Knowledge and the Knower reflection",
+    "notes": "This card introduces the idea that knowledge is never neutral."
+  }
+]
