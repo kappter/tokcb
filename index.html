@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOK Curriculum Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>TOK Curriculum Builder</h1>
+    <p>Drag, shuffle, revise, and map your TOK 2 course.</p>
 
+    <div class="toolbar">
+      <button id="resetBtn">Reset</button>
+      <button id="exportBtn">Export JSON</button>
+    </div>
+  </header>
+
+  <main id="board"></main>
+
+  <aside id="detailsPanel" class="hidden">
+    <button id="closePanel">×</button>
+    <h2 id="detailTitle"></h2>
+    <p id="detailMeta"></p>
+    <h3>Knowledge Question</h3>
+    <p id="detailKQ"></p>
+    <h3>Activity</h3>
+    <p id="detailActivity"></p>
+    <h3>Assignment</h3>
+    <p id="detailAssignment"></p>
+    <h3>Concepts</h3>
+    <p id="detailConcepts"></p>
+    <h3>Notes</h3>
+    <p id="detailNotes"></p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
