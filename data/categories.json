@@ -1,1 +1,7 @@
-
+[
+  { "id": "foundations", "title": "Foundations" },
+  { "id": "knower", "title": "Knowledge & the Knower" },
+  { "id": "aoks", "title": "Areas of Knowledge" },
+  { "id": "essay", "title": "Essay Skills" },
+  { "id": "production", "title": "Essay Production" }
+]
