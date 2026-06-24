@@ -14,6 +14,8 @@ async function init() {
   units = await fetch("data/units.json")
     .then(r => r.json());
 
+  console.table(units);
+console.table(concepts);
   const saved = localStorage.getItem("tokCards");
 
   categories = await fetch("data/categories.json")
