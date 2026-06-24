@@ -61,7 +61,51 @@ function renderBoard() {
     board.appendChild(column);
   });
 }
+function renderConceptMap() {
+  board.innerHTML = "";
 
+  const wrapper = document.createElement("div");
+  wrapper.className = "concept-map";
+
+  units.forEach(unit => {
+    const unitBox = document.createElement("section");
+    unitBox.className = "unit-box";
+    unitBox.dataset.unit = unit.id;
+
+    unitBox.innerHTML = `<h2>${unit.title}</h2>`;
+
+    const conceptList = document.createElement("div");
+    conceptList.className = "concept-list";
+
+    (unit.concepts || []).forEach(conceptId => {
+      const concept = concepts.find(c => c.id === conceptId);
+      if (concept) {
+        conceptList.appendChild(createConceptPill(concept));
+      }
+    });
+
+    unitBox.appendChild(conceptList);
+    wrapper.appendChild(unitBox);
+  });
+
+  const pool = document.createElement("section");
+  pool.className = "concept-pool";
+  pool.innerHTML = `<h2>Concept Pool</h2>`;
+
+  concepts.forEach(concept => {
+    pool.appendChild(createConceptPill(concept));
+  });
+
+  wrapper.appendChild(pool);
+  board.appendChild(wrapper);
+}
+
+function createConceptPill(concept) {
+  const pill = document.createElement("span");
+  pill.className = "concept-pill";
+  pill.textContent = concept.name;
+  return pill;
+}
 function createCard(card) {
   const div = document.createElement("article");
   div.className = "card";
@@ -123,6 +167,14 @@ document.getElementById("exportBtn").addEventListener("click", () => {
   a.href = URL.createObjectURL(blob);
   a.download = "tok-cards-export.json";
   a.click();
+});
+
+document.getElementById("lessonViewBtn").addEventListener("click", () => {
+  renderBoard();
+});
+
+document.getElementById("conceptViewBtn").addEventListener("click", () => {
+  renderConceptMap();
 });
 
 init();
