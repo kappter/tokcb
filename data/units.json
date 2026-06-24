@@ -1,14 +1,21 @@
 [
   {
-    "id":"unit-knower",
-    "title":"Knowledge & the Knower",
-    "term":1,
-    "concepts":[]
+    "id": "unit-knower",
+    "title": "Knowledge & the Knower",
+    "term": 1,
+    "concepts": [
+      "knowledge",
+      "belief",
+      "perspective"
+    ]
   },
   {
-    "id":"unit-kq",
-    "title":"Knowledge Questions",
-    "term":1,
-    "concepts":[]
+    "id": "unit-kq",
+    "title": "Knowledge Questions",
+    "term": 1,
+    "concepts": [
+      "evidence",
+      "truth"
+    ]
   }
 ]
