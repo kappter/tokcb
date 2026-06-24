@@ -179,12 +179,4 @@ document.getElementById("exportBtn").addEventListener("click", () => {
   a.click();
 });
 
-document.getElementById("lessonViewBtn").addEventListener("click", () => {
-  renderBoard();
-});
-
-document.getElementById("conceptViewBtn").addEventListener("click", () => {
-  renderConceptMap();
-});
-
 init();
