@@ -1,0 +1,10 @@
+[
+  { "id":"knowledge", "name":"Knowledge" },
+  { "id":"belief", "name":"Belief" },
+  { "id":"perspective", "name":"Perspective" },
+  { "id":"evidence", "name":"Evidence" },
+  { "id":"truth", "name":"Truth" },
+  { "id":"language", "name":"Language" },
+  { "id":"culture", "name":"Culture" },
+  { "id":"power", "name":"Power" }
+]
