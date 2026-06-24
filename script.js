@@ -5,6 +5,16 @@ let units = [];
 
 const board = document.getElementById("board");
 const detailsPanel = document.getElementById("detailsPanel");
+const lessonBtn = document.getElementById("lessonViewBtn");
+const conceptBtn = document.getElementById("conceptViewBtn");
+
+if (lessonBtn) {
+  lessonBtn.addEventListener("click", renderBoard);
+}
+
+if (conceptBtn) {
+  conceptBtn.addEventListener("click", renderConceptMap);
+}
 
 async function init() {
 
