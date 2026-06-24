@@ -74,7 +74,49 @@ button {
 .dragging {
   opacity: .45;
 }
+.concept-map {
+  width: 100%;
+}
 
+.unit-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  min-height: 220px;
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  margin: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+.concept-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.concept-pool {
+  margin: 24px 12px;
+  padding: 16px;
+  background: #222;
+  color: white;
+  border-radius: 14px;
+}
+
+.concept-pool .concept-pill {
+  background: white;
+  color: #222;
+}
+
+.concept-pill {
+  display: inline-block;
+  padding: 7px 10px;
+  margin: 4px;
+  border-radius: 999px;
+  background: #ece7dc;
+  font-size: .85rem;
+}
 #detailsPanel {
   position: fixed;
   top: 0;
