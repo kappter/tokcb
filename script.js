@@ -1,23 +1,36 @@
 let categories = [];
 let cards = [];
+let concepts = [];
+let units = [];
 
 const board = document.getElementById("board");
 const detailsPanel = document.getElementById("detailsPanel");
 
 async function init() {
+
+  concepts = await fetch("data/concepts.json")
+    .then(r => r.json());
+
+  units = await fetch("data/units.json")
+    .then(r => r.json());
+
   const saved = localStorage.getItem("tokCards");
 
-  categories = await fetch("data/categories.json").then(r => r.json());
+  categories = await fetch("data/categories.json")
+    .then(r => r.json());
 
   if (saved) {
     cards = JSON.parse(saved);
   } else {
-    cards = await fetch("data/cards.json").then(r => r.json());
+    cards = await fetch("data/cards.json")
+      .then(r => r.json());
   }
+
+  console.log("Concepts:", concepts);
+  console.log("Units:", units);
 
   renderBoard();
 }
-
 function renderBoard() {
   board.innerHTML = "";
 
